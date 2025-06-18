@@ -1,3 +1,5 @@
 *.keras
 *.pkl
 *.txt
+.idea/*
+__*
