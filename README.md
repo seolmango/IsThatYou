@@ -5,3 +5,9 @@
 > python 3.9 (conda 권장)
 > 
 > konlpy, tensorflow, keras, scikit-learn, pandas 모듈 설치가 필요합니다.
+
+## 사용법
+
+```cmd
+python Train.py -f data.txt
+```
