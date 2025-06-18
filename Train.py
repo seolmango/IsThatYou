@@ -74,6 +74,7 @@ total_data = {
     'text': []
 }
 tags = {name:i for i, name in enumerate(parse_data.keys())}
+tags_re = {i:name for i, name in enumerate(parse_data.keys())}
 
 for key, text in parse_data.items():
     for i in text:
@@ -117,7 +118,7 @@ label_counts = total_data['label'].value_counts()
 system('cls')
 print(f"총 데이터 수: {len(total_data)}")
 for label, count in label_counts.items():
-    print(f"{label}({list(tags.keys())[label]}): {count}({count/len(total_data)*100:.2f}%)")
+    print(f"{label}({tags_re[label]}): {count}({count/len(total_data)*100:.2f}%)")
 input("진행하려면 엔터키를 입력하세요.")
 
 system('cls')
